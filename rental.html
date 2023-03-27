@@ -2,9 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бронювання авто</title>
+  <link rel="stylesheet" href="styleRental.css">
 </head>
 <body>
-$END$
+<header>
+  <h1>Сервіс прокату авто</h1>
+  <nav>
+    <ul>
+      <li><a href="lab1.html">Головна</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="rental.html">Бронювання</a></li>
+      <li><a href="aboutUs.html">Про нас</a></li>
+      <li><a href="login.html">Вхід</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <form action="#" method="post">
+    <h2>Виберіть авто</h2>
+    <label for="car-select">Авто:</label>
+    <select name="car" id="car-select">
+      <option value="car-1">Audi A4</option>
+      <option value="car-2">BMW 320i</option>
+      <option value="car-3">Mercedes C200</option>
+    </select>
+    <h2>Вкажіть дати</h2>
+    <label for="start-date">Дата початку:</label>
+    <input type="date" name="start-date" id="start-date">
+    <label for="end-date">Дата завершення:</label>
+    <input type="date" name="end-date" id="end-date">
+    <h2>Контактна інформація</h2>
+    <label for="name">Ім'я:</label>
+    <input type="text" name="name" id="name" required>
+    <label for="email">Електронна пошта:</label>
+    <input type="email" name="email" id="email" required>
+    <label for="phone">Телефон:</label>
+    <input type="tel" name="phone" id="phone" required>
+    <button type="submit">Забронювати</button>
+  </form>
+</main>
+<footer>
+  <p>© 2023. Всі права захищені.</p>
+</footer>
 </body>
 </html>
